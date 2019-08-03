@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
+
 const page = (Page) => {
     return(
         class PageWrapper extends Component{

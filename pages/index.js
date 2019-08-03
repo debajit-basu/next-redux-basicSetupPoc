@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Nav from '../components/nav'
 import Page from '../components/page';
+import '../static/styles/mycss.css';
 
 import { connect } from 'react-redux';
 
@@ -18,8 +19,14 @@ const Home = (props) => (
 
       <div>
           <div>
-              <div className='mt-4 d-flex justify-content-center p-4 ml-5'>
-                  <h1 onClick={() => { props.showName() }}>Welcome <u>{props.globalVar.name}</u> to next-redux-setup </h1>
+              <div className='container'>
+                  <span className="card">
+                    <span onClick={() => { props.showName() }}>Welcome <u>{props.globalVar.name}</u> to next-redux-setup </span>
+                    <hr/>
+                    <span>using custom css and bootstarp</span>
+                  </span>
+                  
+                  
               </div>
           </div>
 
